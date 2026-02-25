@@ -6,7 +6,6 @@ import com.textfield.bettertextfield.ClientUtils;
 import com.textfield.bettertextfield.TextFieldState;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
-import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.GuiTextField;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.util.math.MathHelper;
@@ -25,7 +24,7 @@ import javax.annotation.Nullable;
 import java.util.LinkedList;
 
 @Mixin(GuiTextField.class)
-public abstract class GuiTextFieldMixin extends Gui {
+public class GuiTextFieldMixin {
     @Final
     @Shadow
     @Nullable // 原版处理了 null
